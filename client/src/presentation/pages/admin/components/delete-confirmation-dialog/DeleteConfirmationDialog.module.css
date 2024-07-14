@@ -1,0 +1,42 @@
+.delete_confirmation_dialog__container{
+    position:absolute;
+    width:40%;
+    box-sizing:border-box;
+    box-shadow:var(--box-shadow);
+    left:30%;
+    top:20%;
+    background-color:var(--white-color);
+    z-index:15;
+    box-sizing:border-box;
+   
+}
+
+.delete_confirmation__actions{
+    display:flex;
+    justify-content: right;
+    gap:5px;
+    padding:10px;
+}
+.delete_confirmation_dialog__container button{
+    width:fit-content;
+
+} 
+
+.delete_confirmation_dialog__container h4{
+    background-color:var(--primary-color);
+    padding:10px;
+    color:var(--white-color);
+}
+
+.delete_confirmation_dialog__container p{
+    padding:30px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .delete_confirmation_dialog__container{
+        width:90%;
+        left:5%;
+    }
+
+}

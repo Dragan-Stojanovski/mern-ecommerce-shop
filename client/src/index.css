@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --primary-color: #0a66c2;
+    --light-primary-color: #0a66c213;
+    --secondary-color: #b24020;
+    --black-color: black;
+    --light-black-color: rgb(104, 101, 101);
+    --white-color: white;
+    --light-hover-color: rgba(182, 182, 182, 0.235);
+    --box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+    --box-border-color: rgba(0,0,0,0.1);
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  .swiper {
+    width: 1600px;
+    height: 300px;
+    display:flex;
+    justify-content: center;
+  }
+  .swiper-slide img{
+    width:100%;
+  }
+
+  .errors_msg{
+    background-color: red;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 5px 0px;
+  }
+  

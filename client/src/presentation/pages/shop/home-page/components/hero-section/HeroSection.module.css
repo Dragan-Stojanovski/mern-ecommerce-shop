@@ -1,0 +1,82 @@
+.hero_section__wraper{
+    background-image:URL('https://websitedemos.net/blingg-jewelry-store-04/wp-content/uploads/sites/1119/2022/08/hero.jpg');
+    background-size:cover;
+    background-position:center;
+    height:80vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+}
+
+.hero_section__wraper h4{
+    font-size:1rem;
+    font-weight:500;
+    letter-spacing:-1px;
+}
+
+.hero_section__wraper h2{
+    font-size:3.7rem;
+    line-height:3.8rem;
+    margin-top:1rem;
+    font-weight:300;
+    letter-spacing:0.3rem;
+    text-transform:uppercase;
+
+}
+
+.hero_section__wraper p{
+    font-size:1rem;
+    line-height:1.5rem;
+    letter-spacing:0.1rem;
+    margin-top:2.5rem;
+    margin-bottom:1.5rem;
+    color:var(--light-black-color);
+}
+
+.hero_section__content{
+    width:68%;
+    margin:auto;
+}
+
+.hero_section__content a{
+    padding:3px 10px;
+    border:1px solid var(--black-color);
+    text-decoration:none;
+    color:var(--black-color);
+    background-color:transparent;
+    font-size:1.3rem;
+    font-weight:300;
+    transition: all 0.3s ease;
+}
+
+.hero_section__content a:hover{
+    color:var(--white-color);
+    background-color:var(--black-color);
+}
+
+@media only screen and (max-width: 600px) { 
+    .hero_section__wraper{
+        height:100vh;
+        
+    }
+    .hero_section__content{
+        width:98%;
+    }
+    
+
+    .hero_section__wraper h4{
+        font-size:1rem;
+    }
+    
+    .hero_section__wraper h2{
+        font-size:3.1rem;
+        line-height:3.1rem;
+    }
+    
+    .hero_section__wraper p{
+        font-size:0.8rem;
+        line-height:1.5rem;
+        margin-top:1.5rem;
+        margin-bottom:0.5rem;
+    }
+}

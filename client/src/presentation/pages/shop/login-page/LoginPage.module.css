@@ -1,0 +1,32 @@
+.login_page__wrapper{
+    width:40%;
+    margin:auto;
+    margin-top:5%;
+    border:1px solid var(--box-border-color);
+    padding:30px 20px;
+    box-sizing:border-box;
+    box-shadow:var(--box-shadow);
+}
+
+.login_page__field{
+    margin-bottom:1em;
+}
+
+.login_page__header h1 {
+    color: var(--black-color);
+    text-align: center;
+    font-weight: 300;
+  }
+
+    .already_authenticated_msg {
+    margin-top: 1em;
+  }
+
+  @media only screen and (max-width: 600px) {
+    
+    .login_page__wrapper{
+        width:95%;
+        margin:auto;
+        margin-top:15%;
+    }
+  }

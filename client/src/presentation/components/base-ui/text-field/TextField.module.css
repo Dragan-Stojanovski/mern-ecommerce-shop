@@ -1,0 +1,19 @@
+.input_field_wrapper {
+    display: block;
+  }
+  
+  .input_field_wrapper label {
+    color: var(--light-black-color);
+    font-weight: 600;
+  }
+  
+  .input_field_wrapper input {
+    width: 100%;
+    height: 2rem;
+    padding: 0px 0px;
+  }
+  
+  .error {
+    color: var(--secondary-color);
+  }
+  
