@@ -41,7 +41,29 @@ margin-top:10px;
     float:right;
 }
 
+.product_details__box button{
+    width:fit-content;
+    box-sizing:border-box;
+}
 
+.product_details__box a {
+    text-decoration:none;
+    font-size:0.8rem;
+    color:var(--secondary-color);
+}
+
+.quantity_button{
+    background:transparent;
+    border:1px solid var(--primary-color);
+    padding:9px;
+    margin-right:3px;
+    cursor:pointer;
+}
+.quantity_button:hover{
+    background:var(--primary-color);
+    border:1px solid var(--primary-color);
+    color:var(--white-color);
+}
 @media only screen and (max-width: 600px) {
     .product_details__wrapper{
       flex-direction:column;

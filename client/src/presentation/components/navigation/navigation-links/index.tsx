@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { IRootState } from "../../../../domain/usecases/store/rootState";
 import { useDispatch, useSelector } from "react-redux";
 import styles from './NavigationLinks.module.css';
@@ -10,21 +10,11 @@ import { FaUserAlt } from "react-icons/fa";
 import { fetchUserDirectly } from "../../../../domain/store/actions/getUserOwn";
 import { getCategories } from "../../../../data/content/categories/getCategories";
 
-export interface INavItemsProps {
+export interface INavItemsParams {
     path: string;
     label: string;
   }
-
-
-   const categories: INavItemsProps[] = [
-    { path: "/products/rings", label: "RING" },
-    { path: "/products/bracklets", label: "BRACKLET" },
-    { path: "/products/necklaces", label: "NECKLACE" },
-  ]
-
-
-
-const navItems: INavItemsProps[] = [
+const navItems: INavItemsParams[] = [
     { path: "/login", label: "LOGIN" },
     { path: "/register",label: "REGISTER" },
 ];
@@ -93,7 +83,7 @@ return(
 <li className={styles.wrapper_for_authenticated_options}> 
   
   
-  <button><FaCartShopping /></button></li> 
+  <button><Link to="/cart"><FaCartShopping /></Link></button></li> 
   
   <li> <button onClick={() => toggleProfileDropdown()}>{username && <><span>{username}</span> <FaUserAlt /></>}</button>
 

@@ -1,0 +1,33 @@
+.generic_table__wrapper {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.generic_table__wrapper th, .generic_table__wrapper td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.generic_table__wrapper th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.generic_table__wrapper img {
+    display: block;
+    margin: auto;
+}
+
+.deleteButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .deleteButton:hover {
+    background-color: #ff0000;
+  }

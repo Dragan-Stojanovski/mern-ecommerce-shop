@@ -32,9 +32,11 @@ const BaseTable: React.FC<IBaseTableProps> = ({ data, onDelete }) => {
             {headers.map((header) => (
               <td key={`${rowIndex}-${header}`} className={styles.td}>{row[header]}</td>
             ))}
+           {onDelete && (
             <td className={styles.td}>
               <button onClick={() => onDelete(row._id)} className={styles.deleteButton}>Delete</button>
             </td>
+            )}
           </tr>
         ))}
       </tbody>

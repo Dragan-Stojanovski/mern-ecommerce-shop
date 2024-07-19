@@ -5,8 +5,7 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: [true, 'Username is required'],
     unique: true,
-    minlength: [6, 'Username must be at least 6 characters'],
-    maxlength: [15, 'Username must be at most 15 characters']
+
   },
   email: {
     type: String,
@@ -17,8 +16,8 @@ const UserSchema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-    validate: passwordValidators
-    
+    validate: passwordValidators,
+
   },
   
   profilePicture: { type: String, default: '' },

@@ -1,10 +1,5 @@
 const passwordValidator = [
-    {
-      validator: function(value) {
-        return value.length >= 6 && value.length <= 15;
-      },
-      message: 'Password should be between 6 and 15 characters'
-    },
+    
     {
       validator: function(value) {
         return /[A-Z]/.test(value);

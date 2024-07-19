@@ -12,6 +12,7 @@ import CategoriesPage from "./presentation/pages/admin/pages/content/categories"
 import PartnersPage from "./presentation/pages/admin/pages/content/partners-page";
 import ProductPage from "./presentation/pages/admin/pages/content/product-page";
 import ProductDetails from "./presentation/pages/shop/products-page/product-details";
+import CartPage from "./presentation/pages/shop/cart-page";
 
 const App = () => {
 
@@ -36,6 +37,7 @@ const App = () => {
         <Route path="*" element={<Navigate to="/" />} />
         <Route path="/login" element={renderLoginPage} />
         <Route path="/register" element={renderRegisterPage} />
+        <Route path="/cart" element={<CartPage />} />
         <Route path="/details/:id" element={<ProductDetails />} />
         <Route path="/admin" element={<AdminHomePage />}>
           <Route path="categories" element={<CategoriesPage />} />

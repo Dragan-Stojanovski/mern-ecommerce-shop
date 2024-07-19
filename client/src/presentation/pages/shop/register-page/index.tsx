@@ -48,6 +48,8 @@ const RegisterPage: React.FC = (): JSX.Element => {
    * @returns The result of the registration process.
    */
   async function registerUserFn(data: IRegisterUserRequestBody) {
+    console.log("Register Data",data)
+
     try {
       await registerNewUser(data);
       setSuccessMsg("Registration successful!");
