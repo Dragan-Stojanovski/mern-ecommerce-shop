@@ -13,6 +13,7 @@ import PartnersPage from "./presentation/pages/admin/pages/content/partners-page
 import ProductPage from "./presentation/pages/admin/pages/content/product-page";
 import ProductDetails from "./presentation/pages/shop/products-page/product-details";
 import CartPage from "./presentation/pages/shop/cart-page";
+import ProductsByCategory from "./presentation/pages/shop/products-page/products-by-category";
 
 const App = () => {
 
@@ -39,6 +40,8 @@ const App = () => {
         <Route path="/register" element={renderRegisterPage} />
         <Route path="/cart" element={<CartPage />} />
         <Route path="/details/:id" element={<ProductDetails />} />
+        <Route path="/products/:category" element={<ProductsByCategory />} />
+
         <Route path="/admin" element={<AdminHomePage />}>
           <Route path="categories" element={<CategoriesPage />} />
           <Route path="partners" element={<PartnersPage />} />

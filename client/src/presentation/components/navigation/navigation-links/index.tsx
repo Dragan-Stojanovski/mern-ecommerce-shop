@@ -71,12 +71,12 @@ return(
   {isDropdownVisible && (
     <>
 <div className={styles.navigation_links__box}>
-{productCategories.map((item:INavItemsProps) => (
-      <li><NavLink className={({ isActive }) => (isActive ? styles.active_link : "")}  to={item.path} >{item.label}</NavLink></li>
+{productCategories.map((item:INavItemsParams) => (
+      <li><NavLink className={({ isActive }) => (isActive ? styles.active_link : "")}  to={`products/category=${item.path}`} >{item.label}</NavLink></li>
 ))}
 </div>
   <div className={`${styles.navigation_links__box} ${styles.navigation_links__authenticated}`}>
-     {!username ? navItems.map((item:INavItemsProps) => (
+     {!username ? navItems.map((item:INavItemsParams) => (
       <li><NavLink className={({ isActive }) => (isActive ? styles.active_link : "")}  to={item.path} >{item.label}</NavLink></li>
 )): <>
 
