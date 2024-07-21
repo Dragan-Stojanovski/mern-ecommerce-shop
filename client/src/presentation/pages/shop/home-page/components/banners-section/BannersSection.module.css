@@ -1,0 +1,109 @@
+.banners_section__wrapper{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    margin-top:10rem;
+    gap:10%;
+}
+
+.banners_section_images__box{
+    width:25%;
+    background-image:URL('https://websitedemos.net/blingg-jewelry-store-04/wp-content/uploads/sites/1119/2022/08/bg-01.jpg');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    padding:50px 0px;
+}
+
+ .banners_section_images__box img{
+    height:400px;
+margin-left:-100px;
+    left:0;
+} 
+
+.banners_section__box{
+    width:25%;
+
+}
+
+.banners_section__box h4{
+    font-weight:300;
+    font-size:1.1rem;
+    letter-spacing:-1px;
+    color:var(--light-black-color);
+}
+
+.banners_section__box h2{
+font-weight:300;
+font-size:4rem;
+letter-spacing:0.3rem;
+margin-top:1rem;
+line-height:3.8rem;
+}
+
+.banners_section__box p{
+color:var(--light-black-color);
+width:70%;
+font-weight:300;
+margin-top:1rem;
+    }
+
+.banners_section__box button{
+    width:fit-content;
+    margin-top:1rem;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
+    background:transparent;
+    transition:0.3s ease-out;
+}
+
+.banners_section__box button:hover{
+border:1px solid var(--primary-color);
+background:var(--primary-color);
+color:var(--white-color);
+
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .banners_section__wrapper{
+        flex-direction:column;
+        margin-top:3rem;
+    }
+
+    .banners_section_images__box{
+        width:90%;
+        height:400px;
+        background-image:URL('https://websitedemos.net/blingg-jewelry-store-04/wp-content/uploads/sites/1119/2022/08/bg-01.jpg');
+        background-position:center;
+        background-repeat:no-repeat;
+        background-size: cover;
+        padding:0px;
+        margin-top:1rem;
+    }
+    
+     .banners_section_images__box img{
+      display:none;
+    } 
+    
+    .banners_section__box p{
+        width:100%;
+            }
+
+            .banners_section__box button{
+                width:100%;
+            
+            }
+            
+.banners_section__box{
+    width:90%;
+text-align:center;
+}
+
+.banners_section__box h2{
+    font-size:3rem;
+    line-height:2.7rem;
+}
+
+}
