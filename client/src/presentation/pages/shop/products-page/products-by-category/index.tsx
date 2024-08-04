@@ -22,7 +22,7 @@ const ProductsByCategory = ():JSX.Element => {
             };
 
             fetchProducts();  
-        }
+        } 
     }, [category]);
 if(products === null){
     return<h2>Loading...</h2>

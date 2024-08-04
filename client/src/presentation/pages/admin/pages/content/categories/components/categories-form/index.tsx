@@ -1,11 +1,11 @@
 import { useForm } from "react-hook-form";
-import { IAddCategoryRequest } from "../../../../../../../../domain/usecases/content/categories";
 import { SetStateAction, useState } from "react";
 import styles from '../../Categories.module.css';
 import TextField from "../../../../../../../components/base-ui/text-field";
 import BaseButton from "../../../../../../../components/base-ui/base-button";
 import { addCategory } from "../../../../../../../../data/content/categories/addCategory";
 import { Dispatch } from "react";
+import { ICategory } from "../../../../../../../../domain/usecases/content/categories";
 
 export interface ICategoriesFormProps  {
     setIsModeVisible: Dispatch<SetStateAction<boolean>>;
@@ -13,11 +13,11 @@ export interface ICategoriesFormProps  {
 
 const CategoriesForm = ({setIsModeVisible}:ICategoriesFormProps):JSX.Element => {
     const [successMessage, setSuccessMessage] = useState<string | undefined>()
-    const { handleSubmit, control } = useForm<IAddCategoryRequest>({
+    const { handleSubmit, control } = useForm<ICategory>({
         mode: "onChange",
       });
 
-    async function createCategoryFn(data:IAddCategoryRequest) {
+    async function createCategoryFn(data:ICategory) {
         try{
             await addCategory(data);
             setSuccessMessage("Category succesfully added")

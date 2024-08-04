@@ -17,7 +17,7 @@ export interface ITextFieldProps {
   label: string;
   testId: string;
   control: Control;
-  rules: RegisterOptions;
+  rules?: RegisterOptions;
   placeholder?:string;
 }
 /**

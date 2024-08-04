@@ -14,6 +14,7 @@ import ProductPage from "./presentation/pages/admin/pages/content/product-page";
 import ProductDetails from "./presentation/pages/shop/products-page/product-details";
 import CartPage from "./presentation/pages/shop/cart-page";
 import ProductsByCategory from "./presentation/pages/shop/products-page/products-by-category";
+import UserProfilePage from "./presentation/pages/shop/user-profile-page";
 
 const App = () => {
 
@@ -39,6 +40,7 @@ const App = () => {
         <Route path="/login" element={renderLoginPage} />
         <Route path="/register" element={renderRegisterPage} />
         <Route path="/cart" element={<CartPage />} />
+        <Route path="/user-profile" element={<UserProfilePage />} />
         <Route path="/details/:id" element={<ProductDetails />} />
         <Route path="/products/:category" element={<ProductsByCategory />} />
 

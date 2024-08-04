@@ -89,7 +89,7 @@ return(
 
   {isProfileDropdownVisible && (
 <ul className={styles.profile_dropdown}>
-<li><NavLink to="/profile">Profile</NavLink></li>
+<li><NavLink to="/user-profile">Profile</NavLink></li>
 <li className={styles.logout_button} onClick={logoutUser}> Log Out </li>
 </ul>
 )}

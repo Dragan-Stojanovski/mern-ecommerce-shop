@@ -1,11 +1,16 @@
 .base_btn {
     width: 100%;
-    background-color: var(--primary-color);
-    color: var(--white-color);
+    background:transparent;
+    border:1px solid var(--primary-color);
+    color:var(--primary-color);
     padding: 10px 5px;
     cursor: pointer;
     box-shadow: none;
-    border: none;
     height:100%;
+    transition:0.3s ease-out;
   }
   
+  .base_btn:hover {
+    background:var(--primary-color);
+    color:var(--white-color);
+  }

@@ -18,7 +18,18 @@ const UserSchema = new mongoose.Schema({
     required: true,
     validate: passwordValidators,
   },
-  
+  firstName:{
+    type:String, 
+  },
+  secondName:{
+    type:String, 
+  },
+  phone: {
+    type:String, 
+  },
+  gender: {
+    type:String
+  },
   profilePicture: { type: String, default: '' },
 });
 

@@ -1,0 +1,91 @@
+.profile_page__section{
+    width:100%;
+    background-color:var(--light-hover-color);
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.user_profile_page__container{
+    width: 80%;
+    margin:auto;
+    background-color:var(--white-color);
+
+}
+
+.user_profile_page__wrapper{
+    width:90%;
+    margin:auto;
+    padding-top:5vh;
+    padding-bottom:5vh;
+    display:flex;
+}
+
+.user_profile_info__wrapper{
+    width:fit-content;
+    text-align:center;
+}
+
+.user_profile_personal_information__wrapper{
+    width:90%;
+    margin:auto;
+}
+
+.user_profile_info__wrapper svg{
+font-size:4rem;
+fill:var(--primary-color);
+}
+
+.user_profile_pesonal_information_header__box svg{
+    font-size:4rem;
+fill:var(--primary-color);
+}
+
+.user_profile_pesonal_information_header__wrapper{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    gap:2%;
+    width:80%;
+}
+
+.user_profile_pesonal_information_header__wrapper h2{
+    font-size:2.5rem;
+    letter-spacing:0.2rem;
+}
+
+.user_profile_pesonal_information_header__wrapper p{
+    font-weight:300;
+    width:100%;
+    color:var(--light-black-color);
+}
+
+.personal_information_form_fields_gender__box{
+    display:flex;
+    justify-content: left;
+    gap:1rem;
+    margin-top:1rem;
+}
+
+.personal_information_form_fields_gender__box button{
+border:none;
+background-color:var(--primary-color);
+color:var(--white-color);
+font-size:2rem;
+padding:10px;
+box-shadow:var(--box-shadow);
+cursor:pointer;
+}
+
+.active_gender{
+    background-color:var(--secondary-color) !important; 
+}
+
+.personal_information_firstname_lastname__wrapper{
+    display:flex;
+    justify-content: space-between;
+    gap:2%;
+}
+
+.personal_information_firstname_lastname__wrapper .personal_information_form_fields__box{
+    width:80%
+}
